@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/png" href="res/icon.png">
+        
+        <title>#8 &mdash; filter</title>
+    </head>
+
+    <body>
+        <section class="container column">
+            <div class="title column">
+                <h1 class="h1">Our <span style="color: palevioletred; font-size: 50px;">Store</span></h1> 
+            
+                <form class="search-form row">
+                    <button class="search-btn" id="btn-search">
+                        <svg class="search-icon">
+                            <use xlink:href="./res/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+
+                    <input type="text" class="search-bar" placeholder="search... (Case sensitive)" id="input">
+                </form>
+            </div>
+
+            <div class="grid">
+                <div class="grid__box grid__box--1 column hidden" id="berry">
+                    <img src="./res/berry-cake.jpg" class="grid__img">
+
+                    <div class="grid__row row">
+                        <h2 class="h2">Berry Cake</h2>
+
+                        <h2 class="h2">£5</h2>
+                    </div>
+                </div>
+
+                <div class="grid__box grid__box--2 column hidden" id="chocolate">
+                    <img src="./res/chocolate-cake.jpg" class="grid__img">
+
+                    <div class="grid__row row">
+                        <h2 class="h2">Chocolate Cake</h2>
+
+                        <h2 class="h2">£7</h2>
+                    </div>
+                </div>
+
+                <div class="grid__box grid__box--3 column hidden" id="cup">
+                    <img src="./res/cup-cake.jpg" class="grid__img">
+
+                    <div class="grid__row row">
+                        <h2 class="h2">Cup Cake</h2>
+
+                        <h2 class="h2">£2</h2>
+                    </div>
+                </div>
+
+                <div class="grid__box grid__box--4 column hidden" id="fruit">
+                    <img src="./res/fruit-cake.jpg" class="grid__img">
+
+                    <div class="grid__row row">
+                        <h2 class="h2">Fruit Cake</h2>
+
+                        <h2 class="h2">£6</h2>
+                    </div>
+                </div>
+
+                <div class="grid__box grid__box--5 column hidden" id="pumpkin">
+                    <img src="./res/pumpkin-cake.jpg" class="grid__img">
+
+                    <div class="grid__row row">
+                        <h2 class="h2">Pumpkin Cake</h2>
+
+                        <h2 class="h2">£10</h2>
+                    </div>
+                </div>
+
+                <div class="grid__box grid__box--6 column hidden" id="tower">
+                    <img src="./res/tower-cake.jpg" class="grid__img">
+
+                    <div class="grid__row row">
+                        <h2 class="h2">Tower Cake</h2>
+
+                        <h2 class="h2">£20</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-panel row">
+                <button class="btn-panel__btn" id="btn-all">All</button>
+
+                <button class="btn-panel__btn" id="btn-fruit">Fruit</button>
+
+                <button class="btn-panel__btn" id="btn-noFruit">No Fruit</button>
+            </div>
+
+            <div class="shoppingTotal column">
+                <h1 class="h1" style="color: rgb(216,112,147);">Shopping Total:</h1>
+
+                <h2 class="h2" style="font-size: 27px;" id="total">£???</h2>
+            </div>
+
+            <div class="popup__background popup__hidden center" id="popup-whole">
+                <button class="popup__button popup__button--left center"  id="popup-left">
+                    <svg class="popup__arrow popup__arrow--left">
+                        <use xlink:href="./res/sprite2.svg#icon-play3"></use>
+                    </svg>
+                </button>
+
+                <button class="popup__button popup__button--right center" id="popup-right">
+                    <svg class="popup__arrow">
+                        <use xlink:href="./res/sprite2.svg#icon-play3"></use>
+                    </svg>
+                </button>
+
+                <img src="res/berry-cake.jpg" class="popup__img" id="popup-image">
+
+                <button class="popup__button popup__close center"  id="popup-exit">
+                    <svg class="popup__cross">
+                        <use xlink:href="./res/sprite2.svg#icon-cross"></use>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>
+
+
+
+<!-- https://jsbeginners.com/javascript-projects-for-beginners/ -->
